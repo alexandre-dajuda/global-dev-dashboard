@@ -1,7 +1,7 @@
 const textCity = document.getElementById("inp-city");
 const btnSearch = document.getElementById("btn-search");
 
-const apiKey = "64ed82fd64548e65383562624501a403";
+const apiKey = "304b72c3686e39360fe983806e070c49";
 
 btnSearch.addEventListener('click',async() => {
  const city = textCity.value;
@@ -20,7 +20,7 @@ btnSearch.addEventListener('click',async() => {
                 alert(`Temperatura em ${data.name}: ${data.main.temp}°C`);
             }
     }catch(error){
-
+        alert("Erro ao conectar com o servidor da gringa.");
     }
    
  }else{
